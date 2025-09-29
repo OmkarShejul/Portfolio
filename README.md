@@ -5,6 +5,7 @@ Hi! I'm **Omkar Shejul**, a final-year B.Tech CSE student at MIT and a Full Stac
 Check out my portfolio: [Live Portfolio](https://<your-vercel-url>)
 ---
 ## 📂 Project Structure
+---
 portfolio/
 │── index.html ← Home
 │── education.html ← Education

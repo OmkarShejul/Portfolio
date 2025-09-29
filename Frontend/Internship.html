@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Omkar Shejul | Internship</title>
+
+    <style>
+        .internship-section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .internship-section h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .internship-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .internship-card {
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            padding: 20px;
+            width: 320px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .internship-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .internship-card h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .internship-card p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .internship-card .tech-tasks {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .internship-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="logo">Omkar Shejul</a>
+        <nav>  
+            <a href="Eduication.html">Education</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Internship.html">Internship</a>
+            <a href="Certifications.html">Certifications</a>
+             <a href="Achivements.html">Achievements</a>
+            <a href="ContactMe.html" >Contact</a>
+        </nav>
+    </header>
+    <br><br><br><br><br><br>
+    <!-- Internship Section -->
+     <h1 style="text-align: center; margin-bottom: 40px;">My Internship</h1>
+
+        <div class="internship-container">
+            <!-- Internship Card Example -->
+            <div class="internship-card">
+                <h3>SEED Infotech</h3>
+                <p><strong>Role:</strong> Full Stack Development Trainee</p>
+                <p><strong>Duration:</strong> Jan 2025 - Present</p>
+                <p class="tech-tasks"><strong>Tasks & Tech:</strong> Worked on React frontend, implemented components, enhanced UI/UX, used MongoDB for practice projects.</p>
+            </div>
+
+            <div class="internship-card">
+                <h3>SETTribe LLP</h3>
+                <p><strong>Role:</strong> Frontend Intern</p>
+                <p><strong>Duration:</strong> Jul 2024 - Dec 2024</p>
+                <p class="tech-tasks"><strong>Tasks & Tech:</strong> Developed Admission Management System, added profile preview, implemented dark mode toggle, improved responsiveness.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

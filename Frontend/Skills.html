@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Omkar Shejul | Skills</title>
+
+    <style>
+        .skills-section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .skills-section h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .skill-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 12px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .skill-card h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .progress-bar {
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 12px;
+            margin-top: 10px;
+        }
+
+        .progress {
+            height: 12px;
+            background-color: #4CAF50;
+            width: 0;
+            transition: width 1s ease-in-out;
+        }
+
+        @media (max-width: 600px) {
+            .skill-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+         <a href="index.html" class="logo">Omkar Shejul</a>
+        <nav>  
+            <a href="Eduication.html">Education</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Internship.html">Internship</a>
+            <a href="Certifications.html">Certifications</a>
+             <a href="Achivements.html">Achievements</a>
+            <a href="ContactMe.html" >Contact</a>
+        </nav>
+    </header>
+    
+    <br><br><br><br><br><br>
+    <!-- Skills Section -->
+        <h1 style="text-align: center; margin-bottom: 40px;">My Skills</h1>
+        <div class="skills-container">
+            <!-- Skill Card Example -->
+            <div class="skill-card">
+                <h3>HTML & CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>React JS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>Node.js & Express</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>MongoDB</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>Java</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Animate progress bars on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const progressBars = document.querySelectorAll('.progress');
+            progressBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>

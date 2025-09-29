@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Omkar Shejul | Projects</title>
+
+    <style>
+        .projects-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .projects-section h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .project-card {
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .project-card h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project-card p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .project-card .tech-stack {
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .project-card a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #4CAF50;
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin-right: 10px;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+
+        .project-card a:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 600px) {
+            .project-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+         <a href="index.html" class="logo">Omkar Shejul</a>
+        <nav>  
+            <a href="Eduication.html">Education</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Internship.html">Internship</a>
+            <a href="Certifications.html">Certifications</a>
+             <a href="Achivements.html">Achievements</a>
+            <a href="ContactMe.html" >Contact</a>
+        </nav>
+    </header>
+    <br><br><br><br><br><br><br><br><br>
+    <!-- Projects Section -->
+    <h1 style="text-align: center; margin-bottom: 40px;">My Project</h1>
+
+        <div class="projects-container">
+            <!-- Project Card Example -->
+            <div class="project-card">
+                <h3>Career Guidance System</h3>
+                <p>A web application to help students choose suitable career paths based on skills and interests.</p>
+                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, Node.js, MongoDB</p>
+                <a href="#" target="_blank">View Demo</a>
+                <a href="https://github.com/OmkarShejul/Career-Guidance-System" target="_blank">GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Auto/Taxi Management System</h3>
+                <p>Manage bookings, drivers, and trips efficiently for taxi services with real-time updates.</p>
+                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, MongoDB</p>
+                <a href="#" target="_blank">View Demo</a>
+                <a href="https://github.com/OmkarShejul/Auto-Taxi-Management-System" target="_blank">GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Admission Management System</h3>
+                <p>Frontend enhancement of an admission system including profile preview and dark mode toggle.</p>
+                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, React</p>
+                <a href="#" target="_blank">View Demo</a>
+                <a href="https://github.com/OmkarShejul/Admission-Management-System" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

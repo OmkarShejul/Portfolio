@@ -1,104 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
-    <!-- Unicons -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Omkar Shejul | Education</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <style>
-        /* Education Section Styling */
-        .education-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            max-width: 1000px;
-            margin: 50px auto;
-        }
+  <!-- Unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-        .edu-card {
-            background-color: #f9f9f9;
-            border-radius: 12px;
-            padding: 25px;
-            width: 280px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 
-        .edu-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        }
+  <title>Omkar Shejul | Education</title>
 
-        .edu-card h3 {
-            margin-bottom: 10px;
-            color: #333;
-        }
+  <style>
+/* Old card style (desktop and larger screens) */
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 50px auto;
+}
 
-        .edu-card p {
-            margin: 5px 0;
-            color: #555;
-        }
+.edu-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
-        @media (max-width: 600px) {
-            .edu-card {
-                width: 90%;
-            }
-        }
-    </style>
+.edu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.edu-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.edu-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Timeline style for mobile only */
+@media (max-width: 600px) {
+    .education-container {
+        display: block;
+        max-width: 90%;
+        margin: 50px auto;
+        padding-left: 20px;
+        border-left: 2px solid #b74b4b;
+    }
+
+    .edu-card {
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 15px 0 15px 25px;
+        border-radius: 0;
+        position: relative;
+    }
+
+    .edu-card::before {
+        content: '';
+        position: absolute;
+        left: -12px;
+        top: 15px;
+        width: 16px;
+        height: 16px;
+        background-color: #b74b4b;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+
+    .edu-card h3 {
+        color: #b74b4b;
+        margin-bottom: 5px;
+    }
+
+    .edu-card p {
+        color: #fff;
+        font-size: 1.4rem;
+    }
+}
+</style>
+
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <a href="index.html" class="logo">Omkar Shejul</a>
-        <nav>  
-            <a href="Eduication.html">Education</a>
-            <a href="Skills.html">Skills</a>
-            <a href="Projects.html">Projects</a>
-            <a href="Internship.html">Internship</a>
-            <a href="Certifications.html">Certifications</a>
-             <a href="Achivements.html">Achievements</a>
-            <a href="ContactMe.html" >Contact</a>
-        </nav>
-    </header>
+  <!-- Header Section -->
+  <header>
+    <a href="index.html" class="logo">Omkar Shejul</a>
+    <nav>  
+      <a href="Eduication.html" class="active">Education</a>
+      <a href="Skills.html">Skills</a>
+      <a href="Projects.html">Projects</a>
+      <a href="Internship.html">Internship</a>
+      <a href="Certifications.html">Certifications</a>
+      <a href="Achivements.html">Achievements</a>
+      <a href="ContactMe.html">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Education Section -->
-    <section class="education">
-        <br><br><br>
-        <h1 style="text-align: center; margin-bottom: 40px;">My Education</h1>
+  <!-- Education Section -->
+  <section class="education">
+    <br><br><br>
+    <h1 style="text-align: center; margin-bottom: 40px;">My Education</h1>
 
-        <div class="education-container">
-            <div class="edu-card">
-                <h3>B.Tech (CSE)</h3>
-                <p><strong>Institution:</strong> MIT</p>
-                <p><strong>Year:</strong> 2021 - 2025</p>
-                <p><strong>CGPA:</strong> XX.X%</p>
-            </div>
+    <div class="education-container">
+      <div class="edu-card">
+        <h3>B.Tech (CSE)</h3>
+        <p><strong>Institution:</strong> MIT</p>
+        <p><strong>Year:</strong> 2021 - 2025</p>
+        <p><strong>CGPA:</strong> 7 CCPA</p>
+      </div>
 
-            <div class="edu-card">
-                <h3>12th (Science)</h3>
-                <p><strong>Institution:</strong> XYZ College</p>
-                <p><strong>Year:</strong> 2019 - 2021</p>
-                <p><strong>Percentage:</strong> XX.X%</p>
-            </div>
+      <div class="edu-card">
+        <h3>12th (Science)</h3>
+        <p><strong>Institution:</strong> dnyandhara College if Arts and Science</p>
+        <p><strong>Year:</strong> 2019 - 2021</p>
+        <p><strong>Percentage:</strong> 85.54%</p>
+      </div>
 
-            <div class="edu-card">
-                <h3>10th</h3>
-                <p><strong>Institution:</strong> ABC School</p>
-                <p><strong>Year:</strong> 2018 - 2019</p>
-                <p><strong>Percentage:</strong> XX.X%</p>
-            </div>
-        </div>
-    </section>
+      <div class="edu-card">
+        <h3>10th</h3>
+        <p><strong>Institution:</strong> Moral Kids High School</p>
+        <p><strong>Year:</strong> 2018 - 2019</p>
+        <p><strong>Percentage:</strong> 75.56</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

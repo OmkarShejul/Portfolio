@@ -1,178 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
-    <!-- Unicons -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Omkar Shejul | Contact</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <style>
-        .contact-section {
-            max-width: 900px;
-            margin: 80px auto;
-            padding: 0 20px;
-        }
+  <!-- Unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-        .contact-section h1 {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 
-        .contact-container {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
+  <title>Omkar Shejul | Contact</title>
 
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+  <style>
+    .contact-section {
+      max-width: 900px;
+      margin: 120px auto 50px auto; /* Added top margin to avoid overlap with fixed header */
+      padding: 0 20px;
+    }
 
-        .contact-form input,
-        .contact-form textarea {
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #b74b4b;
-            font-size: 1.6rem;
-            width: 100%;
-            resize: none;
-        }
+    .contact-section h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
-        .contact-form input:focus,
-        .contact-form textarea:focus {
-            outline: none;
-            border-color: #ff4b4b;
-            box-shadow: 0 0 8px #b74b4b;
-        }
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
 
-        .contact-form button {
-            width: 200px;
-            padding: 12px 20px;
-            border-radius: 50px;
-            border: 2px solid #b74b4b;
-            background-color: black;
-            color: #b74b4b;
-            font-size: 1.6rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
 
-        .contact-form button:hover {
-            background-color: #b74b4b;
-            color: black;
-            transform: scale(1.05);
-            box-shadow: 0 0 20px #b74b4b;
-        }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #b74b4b;
+      font-size: 1.6rem;
+      width: 100%;
+      resize: none;
+    }
 
-        .resume-btn {
-            display: inline-block;
-            padding: 12px 20px;
-            border-radius: 50px;
-            border: 2px solid #b74b4b;
-            background-color: black;
-            color: #b74b4b;
-            font-size: 1.6rem;
-            font-weight: 600;
-            cursor: pointer;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            text-align: center;
-            width: fit-content;
-        }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: #ff4b4b;
+      box-shadow: 0 0 8px #b74b4b;
+    }
 
-        .resume-btn:hover {
-            background-color: #b74b4b;
-            color: black;
-            box-shadow: 0 0 20px #b74b4b;
-            transform: scale(1.05);
-        }
+    .contact-form button {
+      width: 200px;
+      padding: 12px 20px;
+      border-radius: 50px;
+      border: 2px solid #b74b4b;
+      background-color: black;
+      color: #b74b4b;
+      font-size: 1.6rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      align-self: center;
+    }
 
-        .social-icons {
-            display: flex;
-            gap: 15px;
-            margin-top: 30px;
-        }
+    .contact-form button:hover {
+      background-color: #b74b4b;
+      color: black;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #b74b4b;
+    }
 
-        .social-icons a{
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 4rem;
-            height: 4rem;
-            background-color: transparent;
-            border: 0.2rem solid #b74b4b;
-            font-size: 2rem;
-            border-radius: 50%;
-            transition: 0.3s ease;
-            color: #b74b4b;
-        }
+    .resume-btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 50px;
+      border: 2px solid #b74b4b;
+      background-color: black;
+      color: #b74b4b;
+      font-size: 1.6rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
 
-        .social-icons a:hover{
-            color: black;
-            transform: scale(1.3) translateY(-5px);
-            background-color: #b74b4b;
-            box-shadow: 0  0 25px #b74b4b;
-        }
+    .resume-btn:hover {
+      background-color: #b74b4b;
+      color: black;
+      box-shadow: 0 0 20px #b74b4b;
+      transform: scale(1.05);
+    }
 
-        @media(max-width:600px){
-            .contact-form button, .resume-btn{
-                width: 100%;
-            }
-        }
-    </style>
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 30px;
+      justify-content: center;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 4rem;
+      background-color: transparent;
+      border: 0.2rem solid #b74b4b;
+      font-size: 2rem;
+      border-radius: 50%;
+      transition: 0.3s ease;
+      color: #b74b4b;
+    }
+
+    .social-icons a:hover {
+      color: black;
+      transform: scale(1.3) translateY(-5px);
+      background-color: #b74b4b;
+      box-shadow: 0 0 25px #b74b4b;
+    }
+
+    .social-icons svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media(max-width:600px){
+      .contact-form button, .resume-btn {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <a href="index.html" class="logo">Omkar Shejul</a>
-        <nav>  
-            <a href="Eduication.html">Education</a>
-            <a href="Skills.html">Skills</a>
-            <a href="Projects.html">Projects</a>
-            <a href="Internship.html">Internship</a>
-            <a href="Certifications.html">Certifications</a>
-             <a href="Achivements.html">Achievements</a>
-            <a href="ContactMe.html" >Contact</a>
-        </nav>
-    </header>
+  <!-- Header Section -->
+  <header>
+    <a href="index.html" class="logo">Omkar Shejul</a>
+    <nav>  
+      <a href="Eduication.html">Education</a>
+      <a href="Skills.html">Skills</a>
+      <a href="Projects.html">Projects</a>
+      <a href="Internship.html">Internship</a>
+      <a href="Certifications.html">Certifications</a>
+      <a href="Achivements.html">Achievements</a>
+      <a href="ContactMe.html" class="active">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <h1>Contact Me</h1>
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h1>Contact Me</h1>
 
-        <div class="contact-container">
-            <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+    <div class="contact-container">
+      <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
 
-            <a href="resume.pdf" download="OmkarShejul_Resume.pdf" class="resume-btn">Download Resume</a>
+      <a href="OmkarShejul.pdf" download="OmkarShejul.pdf" class="resume-btn">Download Resume</a>
 
-             <div class="social-icons" style="display: flex; gap: 15px; align-items: center; margin-bottom: 20px;">
-                <a href="https://linkedin.com/in/omkar-shejul" target="_blank" style="font-size: 24px;"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/OmkarShejul" target="_blank" style="font-size: 24px;"><i class="fa-brands fa-github"></i></a>
-                <a href="https://leetcode.com/OmkarShejul" target="_blank" style="display: inline-flex; align-items: center; justify-content: center;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" style="vertical-align: middle;">
-                        <path fill="#FFA116" d="M14.63 0L12.52 2.11 19.41 9H11.07L9.07 11H19.41L12.52 17.89 14.63 20 24 10.63 14.63 0ZM6.11 5.55L0 11.66 6.11 17.77 8.22 15.66 4.22 11.66 8.22 7.66 6.11 5.55Z"/>
-                    </svg>
-                </a>
-                <a href="https://instagram.com/" target="_blank" style="font-size: 24px;"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-        </div>
-    </section>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/omkar-shejul" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/OmkarShejul" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://leetcode.com/OmkarShejul" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+            <path fill="#FFA116" d="M14.63 0L12.52 2.11 19.41 9H11.07L9.07 11H19.41L12.52 17.89 14.63 20 24 10.63 14.63 0ZM6.11 5.55L0 11.66 6.11 17.77 8.22 15.66 4.22 11.66 8.22 7.66 6.11 5.55Z"/>
+          </svg>
+        </a>
+        <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
